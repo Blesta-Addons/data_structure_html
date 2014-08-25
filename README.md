@@ -15,11 +15,11 @@ $this->set("html", $this->DataStructure->create("html"));
 
 in the template file .PDT you can use it as the fallowing code 
 
-$result = $string->truncate($text,  $length = 150 , $strip_tags = true , $ending = ' ... ', $exact = false, $considerHtml = true  );
+$result = $html->truncate($text,  $length = 150 , $strip_tags = true , $ending = ' ... ', $exact = false, $considerHtml = true  );
 
 you can sipmly you it as 
 
-$result = $string->truncate($this->Html->ifSet($vars->text),  180   );
+$result = $html->truncate($this->Html->ifSet($vars->text),  180   );
 
 the class support the fallowing param 
 
